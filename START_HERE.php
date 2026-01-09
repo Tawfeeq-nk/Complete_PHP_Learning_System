@@ -268,32 +268,34 @@
                         →</a>
                 </div>
                 <p style="margin-top: 20px;">
-                    <a href="LEARNING_PATH.md" style="color: #667eea; text-decoration: none; font-weight: bold;">📍 View
+                    <a href="LEARNING_PATH.php" style="color: #667eea; text-decoration: none; font-weight: bold;">📍
+                        View
                         Complete Learning Path</a> |
-                    <a href="README_ADVANCED.md" style="color: #667eea; text-decoration: none; font-weight: bold;">📖
+                    <a href="README_ADVANCED.php" style="color: #667eea; text-decoration: none; font-weight: bold;">📖
                         View Learning Guide</a> |
-                    <a href="MASTERY_GUIDE.md" style="color: #667eea; text-decoration: none; font-weight: bold;">🏆 View
+                    <a href="MASTERY_GUIDE.php" style="color: #667eea; text-decoration: none; font-weight: bold;">🏆
+                        View
                         Mastery Guide</a>
                 </p>
             </div>
 
-            <!-- Level 1: Beginner -->
+            <!-- Continuous Learning Path -->
             <div class="section">
-                <h2>Level 1: BEGINNER ✅ (Modules 1-12) COMPLETED</h2>
+                <h2>Your Learning Journey: From Fundamentals to Expert</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    You've mastered PHP fundamentals! You can write basic scripts with variables, loops, functions, and
-                    OOP.
+                    You're progressing through a continuous path of skill development. Each module builds on what you
+                    already know.
                 </p>
                 <div class="grid">
                     <div class="card level-beginner">
-                        <h3>✅ What You Know</h3>
+                        <h3>✅ Foundation (Modules 1-12)</h3>
                         <ul>
                             <li>PHP syntax & variables</li>
-                            <li>Control structures</li>
+                            <li>Control structures & loops</li>
                             <li>Functions & arrays</li>
-                            <li>Basic OOP</li>
-                            <li>Form handling</li>
-                            <li>File I/O</li>
+                            <li>Object-oriented basics</li>
+                            <li>Form handling & input</li>
+                            <li>File operations & sessions</li>
                         </ul>
                     </div>
                     <div class="card level-beginner">
@@ -307,43 +309,44 @@
 
             <!-- Level 2: Intermediate -->
             <div class="section">
-                <h2>Level 2: INTERMEDIATE 🎯 (Modules 13-18) CURRENT FOCUS</h2>
+                <h2>Continuing Forward: Real-World Applications (Modules 13-18)</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    Master databases, SQL, security, and architecture patterns. Build real applications.
+                    Now you'll apply your fundamentals to build real applications. Databases, security, professional
+                    architecture—everything you need.
                 </p>
                 <div class="grid">
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Next Step</span>
                         <h3>Module 13: Database Basics</h3>
                         <p>Learn MySQL, PDO, CRUD operations, and prepared statements.</p>
                         <a href="modules/13_database_basics/lesson.php" class="button">Start Lesson</a>
                     </div>
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Then</span>
                         <h3>Module 14: SQL Queries</h3>
                         <p>Master WHERE, JOINs, aggregation, and pagination.</p>
                         <a href="modules/14_sql_queries/lesson.php" class="button">Start Lesson</a>
                     </div>
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Then</span>
                         <h3>Module 15: MySQL Functions</h3>
                         <p>String/date functions, transactions, and advanced operations.</p>
                         <a href="modules/15_mysql_functions/lesson.php" class="button">Start Lesson</a>
                     </div>
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Then</span>
                         <h3>Module 16: Error Handling</h3>
                         <p>Exception handling, custom handlers, and logging.</p>
                         <a href="modules/16_error_handling/lesson.php" class="button">Start Lesson</a>
                     </div>
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Then</span>
                         <h3>Module 17: Security Basics</h3>
                         <p>SQL injection, XSS, password security, input validation.</p>
                         <a href="modules/17_security_basics/lesson.php" class="button">Start Lesson</a>
                     </div>
                     <div class="card level-intermediate">
-                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge badge-intermediate">Then</span>
                         <h3>Module 18: MVC Pattern</h3>
                         <p>Model-View-Controller architecture and separation of concerns.</p>
                         <a href="modules/18_intro_mvc/lesson.php" class="button">Start Lesson</a>
@@ -351,21 +354,22 @@
                 </div>
 
                 <div class="info-box" style="margin-top: 20px;">
-                    <strong>💡 At this level you'll:</strong>
+                    <strong>💡 After these modules you'll be able to:</strong>
                     <ul style="margin: 10px 0 0 20px; color: #1565c0;">
-                        <li>Build database-driven applications</li>
-                        <li>Write secure code</li>
-                        <li>Understand architecture patterns</li>
-                        <li>Handle errors professionally</li>
+                        <li>Build database-driven applications from scratch</li>
+                        <li>Write secure, production-ready code</li>
+                        <li>Organize code using professional patterns</li>
+                        <li>Handle errors and edge cases gracefully</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Level 3: Advanced -->
             <div class="section">
-                <h2>Level 3: ADVANCED (Modules 19-24) Coming Next</h2>
+                <h2>Going Deeper: Professional Development (Modules 19-24)</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    Master design patterns, APIs, testing, performance, and deployment.
+                    Build systems like senior engineers. Master design patterns, APIs, testing, performance, and
+                    deployment.
                 </p>
                 <div class="grid">
                     <div class="card level-advanced">
@@ -403,9 +407,10 @@
 
             <!-- Level 4: Expert -->
             <div class="section">
-                <h2>Level 4: EXPERT (Modules 25-30) Mastery Level</h2>
+                <h2>Reaching Mastery: System Architecture (Modules 25-30)</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    System design, microservices, containerization, and distributed systems.
+                    Think at an architecture level. Master microservices, containerization, and distributed systems
+                    design.
                 </p>
                 <div class="grid">
                     <div class="card level-expert">
@@ -514,9 +519,10 @@
                     <div class="card">
                         <h3>📖 Learning Guides</h3>
                         <ul>
-                            <li><a href="LEARNING_PATH.md">Complete Learning Path</a></li>
-                            <li><a href="README_ADVANCED.md">Advanced Learning Guide</a></li>
-                            <li><a href="MASTERY_GUIDE.md">Expert Mastery Guide</a></li>
+                            <li><a href="LEARNING_PATH.php">Complete Learning Path</a></li>
+                            <li><a href="README_ADVANCED.php">Advanced Learning Guide</a></li>
+                            <li><a href="MASTERY_GUIDE.php">Expert Mastery Guide</a></li>
+                            <li><a href="GETTING_STARTED.php">Getting Started Today</a></li>
                         </ul>
                     </div>
                     <div class="card">
