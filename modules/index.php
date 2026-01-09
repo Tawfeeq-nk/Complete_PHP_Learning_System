@@ -310,6 +310,204 @@
                     <a href="12_oop_basics/exercises.php" class="btn btn-secondary">Exercises</a>
                 </div>
             </div>
+
+            <div class="module-card">
+                <div class="module-number">13</div>
+                <div class="module-title">Database Basics</div>
+                <div class="module-description">Intro to relational databases, connections using PDO, and basic CRUD
+                    operations.</div>
+                <div class="module-links">
+                    <a href="13_database_basics/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="13_database_basics/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">14</div>
+                <div class="module-title">SQL Queries</div>
+                <div class="module-description">SELECT, JOIN, GROUP BY, HAVING, and subqueries for effective data
+                    retrieval.</div>
+                <div class="module-links">
+                    <a href="14_sql_queries/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="14_sql_queries/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">15</div>
+                <div class="module-title">MySQL Functions</div>
+                <div class="module-description">Common MySQL functions and PHP integration patterns for practical tasks.
+                </div>
+                <div class="module-links">
+                    <a href="15_mysql_functions/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="15_mysql_functions/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">16</div>
+                <div class="module-title">Error Handling</div>
+                <div class="module-description">Exceptions, try/catch, error reporting, and logging strategies for
+                    robust apps.</div>
+                <div class="module-links">
+                    <a href="16_error_handling/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="16_error_handling/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">17</div>
+                <div class="module-title">Security Basics</div>
+                <div class="module-description">Input validation, prepared statements, XSS and CSRF defenses, and safe
+                    session handling.</div>
+                <div class="module-links">
+                    <a href="17_security_basics/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="17_security_basics/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">18</div>
+                <div class="module-title">Intro to MVC</div>
+                <div class="module-description">Model–View–Controller fundamentals, simple routing, and organizing app
+                    structure.</div>
+                <div class="module-links">
+                    <a href="18_intro_mvc/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="18_intro_mvc/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">19</div>
+                <div class="module-title">Design Patterns</div>
+                <div class="module-description">Common patterns: Singleton, Factory, Strategy, Repository, and when to
+                    use them.</div>
+                <div class="module-links">
+                    <a href="19_design_patterns/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="19_design_patterns/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">20</div>
+                <div class="module-title">RESTful APIs</div>
+                <div class="module-description">Build REST APIs with routing, JSON responses, status codes, and simple
+                    authentication.</div>
+                <div class="module-links">
+                    <a href="20_restful_apis/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="20_restful_apis/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">21</div>
+                <div class="module-title">Testing & Debugging</div>
+                <div class="module-description">Using Xdebug, PHPUnit, and practical debugging techniques for reliable
+                    code.</div>
+                <div class="module-links">
+                    <a href="21_testing_debugging/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="21_testing_debugging/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">22</div>
+                <div class="module-title">Authentication & Authorization</div>
+                <div class="module-description">Secure login flows, password hashing, role-based access, and session
+                    protection.</div>
+                <div class="module-links">
+                    <a href="22_authentication_authorization/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="22_authentication_authorization/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">23</div>
+                <div class="module-title">Performance Optimization</div>
+                <div class="module-description">Profiling, caching, opcode cache, query tuning, and common bottleneck
+                    fixes.</div>
+                <div class="module-links">
+                    <a href="23_performance_optimization/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="23_performance_optimization/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">24</div>
+                <div class="module-title">Deployment</div>
+                <div class="module-description">Deploying PHP apps to Apache/Nginx, basic CI workflows, and environment
+                    configuration.</div>
+                <div class="module-links">
+                    <a href="24_deployment/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="24_deployment/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">25</div>
+                <div class="module-title">Advanced OOP</div>
+                <div class="module-description">Traits, interfaces, namespaces, late static binding, and advanced object
+                    techniques.</div>
+                <div class="module-links">
+                    <a href="25_advanced_oop/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="25_advanced_oop/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">26</div>
+                <div class="module-title">Dependency Injection</div>
+                <div class="module-description">DI containers, service wiring, and inversion of control for cleaner
+                    architecture.</div>
+                <div class="module-links">
+                    <a href="26_dependency_injection/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="26_dependency_injection/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">27</div>
+                <div class="module-title">Microservices</div>
+                <div class="module-description">Service boundaries, communication patterns, and deploying shrink-wrapped
+                    services.</div>
+                <div class="module-links">
+                    <a href="27_microservices/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="27_microservices/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">28</div>
+                <div class="module-title">Containerization</div>
+                <div class="module-description">Docker basics: images, containers, Dockerfile, and using containers for
+                    development.</div>
+                <div class="module-links">
+                    <a href="28_containerization/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="28_containerization/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">29</div>
+                <div class="module-title">DevOps Basics</div>
+                <div class="module-description">CI/CD fundamentals, monitoring, and basic infrastructure automation
+                    concepts.</div>
+                <div class="module-links">
+                    <a href="29_devops_basics/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="29_devops_basics/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">30</div>
+                <div class="module-title">System Design</div>
+                <div class="module-description">High-level system design, scaling strategies, and designing for
+                    resilience and performance.</div>
+                <div class="module-links">
+                    <a href="30_system_design/lesson.php" class="btn btn-primary">Lesson</a>
+                    <a href="30_system_design/" class="btn btn-secondary">Folder</a>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
