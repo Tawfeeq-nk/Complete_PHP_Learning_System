@@ -9,6 +9,7 @@
 
 <body>
     <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
     <h1>🔌 MODULE 26: DEPENDENCY INJECTION</h1>
     <p>DI containers, service locators, and IoC principles.</p>
 </body>

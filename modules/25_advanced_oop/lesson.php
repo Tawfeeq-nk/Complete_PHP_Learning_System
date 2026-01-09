@@ -9,6 +9,7 @@
 
 <body>
     <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
     <h1>🎓 MODULE 25: ADVANCED OOP</h1>
     <p>Interfaces, abstract classes, traits, namespaces, and type hinting.</p>
 </body>
