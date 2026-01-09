@@ -153,6 +153,10 @@
     <div class="container">
         <h1>🚀 PHP Backend Learning Path</h1>
         <p class="subtitle">Master PHP fundamentals from zero to advanced level</p>
+        <div style="display:flex;justify-content:center;gap:12px;margin-bottom:18px;flex-wrap:wrap">
+            <a href="search.php" class="btn btn-primary">Search Modules</a>
+            <a href="../index.php" class="btn btn-secondary">Back to Home</a>
+        </div>
 
         <div class="modules-grid">
             <div class="module-card">
