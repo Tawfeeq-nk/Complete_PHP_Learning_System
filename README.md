@@ -11,7 +11,7 @@ Each module contains:
 
 ## 🎯 Learning Path
 
-### LEVEL 1: BEGINNER (Modules 1-7) ✅ COMPLETED
+### LEVEL 1: BEGINNER (Modules 1-7) 
 
 1. **Variables & Data Types** - Foundation of PHP
 2. **Operators** - Mathematical and logical operations
@@ -21,7 +21,7 @@ Each module contains:
 6. **Functions** - Reusable code blocks
 7. **Strings** - Text manipulation
 
-### LEVEL 1: BACKEND ESSENTIALS (Modules 8-12) ✅ COMPLETED
+### LEVEL 1: BACKEND ESSENTIALS (Modules 8-12)
 
 8. **Forms & User Input** - Handling user data
 9. **Superglobals** - Built-in PHP variables
@@ -31,7 +31,7 @@ Each module contains:
 
 ### LEVEL 2: INTERMEDIATE (Modules 13-18) 🎯 CURRENT
 
-13. **Database Basics** - MySQL, PDO, CRUD operations ⭐ NEW
+13. **Database Basics** - MySQL, PDO, CRUD operations
 14. **SQL Queries** - Advanced queries, JOINs, aggregation
 15. **MySQL Functions** - String, date functions, transactions
 16. **Error Handling** - Exception handling, logging
