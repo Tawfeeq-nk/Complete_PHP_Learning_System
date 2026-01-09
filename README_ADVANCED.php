@@ -334,12 +334,14 @@
 
     <div class="container">
         <!-- Navigation -->
-        <div style="background:white;border-radius:10px;padding:12px 20px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;gap:15px;flex-wrap:wrap;">
+        <div
+            style="background:white;border-radius:10px;padding:12px 20px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;gap:15px;flex-wrap:wrap;">
             <a href="index.php" style="color:#f5576c;text-decoration:none;font-weight:500;">← Home</a>
             <span style="color:#ddd;">|</span>
             <a href="START_HERE.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Dashboard</a>
             <a href="LEARNING_PATH.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Learning Path</a>
-            <a href="GETTING_STARTED.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Getting Started</a>
+            <a href="GETTING_STARTED.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Getting
+                Started</a>
             <a href="MASTERY_GUIDE.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Mastery Guide</a>
             <a href="modules/index.php" style="color:#f5576c;text-decoration:none;font-weight:500;">All Modules</a>
             <a href="projects/index.php" style="color:#f5576c;text-decoration:none;font-weight:500;">Projects</a>

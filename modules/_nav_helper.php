@@ -4,11 +4,12 @@
  * Include this file at the top of any module lesson/exercise page
  */
 
-function renderModuleNav($moduleNumber, $moduleTitle, $isExercise = false) {
+function renderModuleNav($moduleNumber, $moduleTitle, $isExercise = false)
+{
     $uplink = $isExercise ? "lesson.php" : "exercises.php";
     $uptext = $isExercise ? "View Lesson" : "Try Exercises";
     $moduleDir = str_pad($moduleNumber, 2, '0', STR_PAD_LEFT) . '_' . str_replace(' ', '_', strtolower($moduleTitle));
-    
+
     echo '<div style="background:#f8f9fa;padding:15px;border-radius:8px;margin-bottom:20px;display:flex;gap:15px;flex-wrap:wrap;align-items:center;">';
     echo '<a href="../index.php" style="color:#667eea;text-decoration:none;font-weight:500;">← Back to Modules</a>';
     echo '<span style="color:#ddd;">|</span>';
@@ -20,9 +21,10 @@ function renderModuleNav($moduleNumber, $moduleTitle, $isExercise = false) {
     echo '</div>';
 }
 
-function renderModuleFooter($moduleNumber, $moduleTitle) {
+function renderModuleFooter($moduleNumber, $moduleTitle)
+{
     $moduleDir = str_pad($moduleNumber, 2, '0', STR_PAD_LEFT) . '_' . str_replace(' ', '_', strtolower($moduleTitle));
-    
+
     echo '<div style="margin-top:40px;padding-top:20px;border-top:2px solid #ddd;">';
     echo '<p style="color:#666;">';
     echo '<a href="../index.php" style="color:#667eea;text-decoration:none;font-weight:500;">← Back to Modules</a> | ';

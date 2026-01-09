@@ -274,7 +274,10 @@
         <!-- Info Box -->
         <div class="info-box">
             <h2>About These Projects</h2>
-            <p>These four projects are designed to be built progressively as you advance through the modules. Each project teaches different concepts and best practices. Start with the Todo App (beginner-friendly) and progress through to the Social Network (advanced). All projects can be built from scratch, enhanced, or used as learning references.</p>
+            <p>These four projects are designed to be built progressively as you advance through the modules. Each
+                project teaches different concepts and best practices. Start with the Todo App (beginner-friendly) and
+                progress through to the Social Network (advanced). All projects can be built from scratch, enhanced, or
+                used as learning references.</p>
         </div>
 
         <!-- Projects Grid -->
@@ -287,7 +290,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Beginner-Friendly Task Manager</h3>
-                    <p>Learn the fundamentals by building a simple yet functional todo application. Perfect for understanding forms, data storage, and basic CRUD operations.</p>
+                    <p>Learn the fundamentals by building a simple yet functional todo application. Perfect for
+                        understanding forms, data storage, and basic CRUD operations.</p>
                     <div class="project-features">
                         <strong>Key Concepts:</strong>
                         <ul>
@@ -312,7 +316,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Complete Content Management Platform</h3>
-                    <p>Build a multi-user blogging platform with posts, comments, and categories. Learn database design, relationships, and content management patterns.</p>
+                    <p>Build a multi-user blogging platform with posts, comments, and categories. Learn database design,
+                        relationships, and content management patterns.</p>
                     <div class="project-features">
                         <strong>Key Concepts:</strong>
                         <ul>
@@ -338,7 +343,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Online Shopping Platform</h3>
-                    <p>Create a full-featured e-commerce platform with products, shopping cart, orders, and payments. Learn advanced OOP patterns, security, and scalability.</p>
+                    <p>Create a full-featured e-commerce platform with products, shopping cart, orders, and payments.
+                        Learn advanced OOP patterns, security, and scalability.</p>
                     <div class="project-features">
                         <strong>Key Concepts:</strong>
                         <ul>
@@ -364,7 +370,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Advanced Social Platform</h3>
-                    <p>The ultimate project: a social networking platform with user profiles, connections, messaging, and feeds. Learn advanced architecture and system design.</p>
+                    <p>The ultimate project: a social networking platform with user profiles, connections, messaging,
+                        and feeds. Learn advanced architecture and system design.</p>
                     <div class="project-features">
                         <strong>Key Concepts:</strong>
                         <ul>
@@ -386,16 +393,21 @@
         <!-- How to Use -->
         <div class="info-box">
             <h2>How to Use These Projects</h2>
-            <p><strong>Progressive Learning:</strong> Start with the Todo App after completing Module 8, then progress to more complex projects as you advance. Each project teaches real-world patterns and best practices.</p>
-            <p style="margin-top: 15px;"><strong>Build as You Learn:</strong> You don't need to wait until you've completed all modules. Start a project when suggested and enhance it as you learn new concepts in later modules.</p>
-            <p style="margin-top: 15px;"><strong>Use for Portfolio:</strong> These projects are great for your portfolio. Deploy them, share on GitHub, and demonstrate what you've learned!</p>
+            <p><strong>Progressive Learning:</strong> Start with the Todo App after completing Module 8, then progress
+                to more complex projects as you advance. Each project teaches real-world patterns and best practices.
+            </p>
+            <p style="margin-top: 15px;"><strong>Build as You Learn:</strong> You don't need to wait until you've
+                completed all modules. Start a project when suggested and enhance it as you learn new concepts in later
+                modules.</p>
+            <p style="margin-top: 15px;"><strong>Use for Portfolio:</strong> These projects are great for your
+                portfolio. Deploy them, share on GitHub, and demonstrate what you've learned!</p>
         </div>
 
         <!-- Footer Navigation -->
         <div class="footer">
-            <a href="../index.php">← Home</a> | 
-            <a href="../START_HERE.php">Dashboard</a> | 
-            <a href="../modules/index.php">All Modules</a> | 
+            <a href="../index.php">← Home</a> |
+            <a href="../START_HERE.php">Dashboard</a> |
+            <a href="../modules/index.php">All Modules</a> |
             <a href="../LEARNING_PATH.php">Learning Path</a>
         </div>
     </div>

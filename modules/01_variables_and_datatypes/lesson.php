@@ -46,7 +46,8 @@
 
 <body>
     <h1>Module 1: Variables and Data Types</h1>
-    <div style="background:#f8f9fa;padding:15px;border-radius:8px;margin-bottom:20px;display:flex;gap:15px;flex-wrap:wrap;align-items:center;">
+    <div
+        style="background:#f8f9fa;padding:15px;border-radius:8px;margin-bottom:20px;display:flex;gap:15px;flex-wrap:wrap;align-items:center;">
         <a href="../index.php" style="color:#667eea;text-decoration:none;font-weight:500;">← Back to Modules</a>
         <span style="color:#ddd;">|</span>
         <a href="exercises.php" style="color:#667eea;text-decoration:none;font-weight:500;">Try Exercises →</a>
@@ -266,8 +267,8 @@
 
     <div style="margin-top:40px;padding-top:20px;border-top:2px solid #ddd;">
         <p style="color:#666;">
-            <a href="../index.php" style="color:#667eea;text-decoration:none;font-weight:500;">← Back to Modules</a> | 
-            <a href="exercises.php" style="color:#667eea;text-decoration:none;font-weight:500;">Try Exercises →</a> | 
+            <a href="../index.php" style="color:#667eea;text-decoration:none;font-weight:500;">← Back to Modules</a> |
+            <a href="exercises.php" style="color:#667eea;text-decoration:none;font-weight:500;">Try Exercises →</a> |
             <a href="../../START_HERE.php" style="color:#667eea;text-decoration:none;font-weight:500;">Dashboard</a>
         </p>
     </div>

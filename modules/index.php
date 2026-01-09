@@ -513,7 +513,10 @@
         <div class="footer">
             <p><strong>Learning Path:</strong> Start with Module 1 and progress sequentially</p>
             <p>Each module includes detailed lessons with examples and practical exercises</p>
-            <p style="margin-top: 20px;"><a href="../index.php" style="color: #667eea;">← Back to Home</a> | <a href="../START_HERE.php" style="color: #667eea;">Dashboard</a> | <a href="../projects/index.php" style="color: #667eea;">Projects</a> | <a href="../LEARNING_PATH.php" style="color: #667eea;">Learning Path</a></p>
+            <p style="margin-top: 20px;"><a href="../index.php" style="color: #667eea;">← Back to Home</a> | <a
+                    href="../START_HERE.php" style="color: #667eea;">Dashboard</a> | <a href="../projects/index.php"
+                    style="color: #667eea;">Projects</a> | <a href="../LEARNING_PATH.php"
+                    style="color: #667eea;">Learning Path</a></p>
         </div>
     </div>
 </body>
