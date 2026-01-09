@@ -48,6 +48,7 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
 
     <div class="container">
         <h1>🔒 MODULE 17: SECURITY BASICS</h1>
@@ -143,6 +144,7 @@ $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     </pre>
     </div>
 
-</body>
+    <body>
+        <?php include __DIR__ . '/../_nav_ui.php'; ?>
 
 </html>

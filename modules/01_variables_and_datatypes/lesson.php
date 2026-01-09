@@ -6,18 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 1: Variables and Data Types</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-        }
+        <body>
 
-        h1 {
-            color: #333;
-        }
-
-        h2 {
+        <?php include __DIR__ . '/../_nav_ui.php'; ?>
+        <h1>Module 1: Variables and Data Types</h1>h2 {
             color: #666;
             margin-top: 30px;
         }
@@ -45,6 +37,8 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
     <h1>Module 1: Variables and Data Types</h1>
     <div
         style="background:#f8f9fa;padding:15px;border-radius:8px;margin-bottom:20px;display:flex;gap:15px;flex-wrap:wrap;align-items:center;">

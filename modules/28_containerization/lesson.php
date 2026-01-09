@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>🐳 MODULE 28: CONTAINERIZATION WITH DOCKER</h1>
     <p>Docker basics, containerizing PHP applications, Docker Compose.</p>
 </body>

@@ -154,6 +154,8 @@
             <a href="../../START_HERE.php" style="color:#667eea;text-decoration:none;font-weight:500;">Dashboard</a>
         </p>
     </div>
-</body>
 
-</html>
+    <body>
+        <?php include __DIR__ . '/../_nav_ui.php'; ?>
+        <h1>Module 1: Variables and Data Types - Exercises</h1>
+        <p><a href="lesson.php">← Back to Lesson</a> | <a href="../index.php">Back to Modules</a></p>

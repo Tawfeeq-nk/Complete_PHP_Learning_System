@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
     <h1>🏗️ MODULE 18: INTRODUCTION TO MVC PATTERN</h1>
     <p>Model-View-Controller architecture for scalable applications.</p>
     <ul>

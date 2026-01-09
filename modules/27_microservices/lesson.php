@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>🏛️ MODULE 27: MICROSERVICES ARCHITECTURE</h1>
     <p>Service-oriented architecture, API gateways, and inter-service communication.</p>
 </body>

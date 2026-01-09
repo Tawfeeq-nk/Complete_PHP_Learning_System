@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>⚙️ MODULE 29: DEVOPS BASICS</h1>
     <p>CI/CD pipelines, infrastructure as code, monitoring, and logging.</p>
 </body>

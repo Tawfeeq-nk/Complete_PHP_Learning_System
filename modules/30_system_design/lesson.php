@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>🎯 MODULE 30: SYSTEM DESIGN & ARCHITECTURE</h1>
     <p>Designing scalable systems, database design, load balancing, and distributed systems.</p>
 </body>

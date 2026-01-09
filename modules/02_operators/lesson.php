@@ -63,6 +63,9 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>Module 2: Operators</h1>
     <p><a href="../index.php">← Back to Modules</a> | <a href="exercises.php">Try Exercises →</a></p>
 

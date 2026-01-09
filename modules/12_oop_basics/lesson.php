@@ -46,6 +46,9 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
     <h1>Module 12: Object-Oriented Programming (OOP) Basics</h1>
 
     <h2>1. Classes and Objects</h2>

@@ -6,14 +6,18 @@
 $root = __DIR__ . DIRECTORY_SEPARATOR;
 $dirs = scandir($root);
 foreach ($dirs as $d) {
-    if ($d === '.' || $d === '..') continue;
+    if ($d === '.' || $d === '..')
+        continue;
     $path = $root . $d;
-    if (!is_dir($path)) continue;
-    if (!preg_match('/^\d{2}_/', $d)) continue;
+    if (!is_dir($path))
+        continue;
+    if (!preg_match('/^\d{2}_/', $d))
+        continue;
 
-    foreach (['lesson.php','exercises.php'] as $file) {
+    foreach (['lesson.php', 'exercises.php'] as $file) {
         $f = $path . DIRECTORY_SEPARATOR . $file;
-        if (!file_exists($f)) continue;
+        if (!file_exists($f))
+            continue;
         $content = file_get_contents($f);
         if (strpos($content, "_nav_ui.php") !== false) {
             echo "OK: $d/$file already has nav\n";

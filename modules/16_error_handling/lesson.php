@@ -38,6 +38,9 @@
 </head>
 
 <body>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
+    <?php include __DIR__ . '/../_module_nav.php'; ?>
+    <?php include __DIR__ . '/../_nav_ui.php'; ?>
 
     <div class="container">
         <h1>⚠️ MODULE 16: ERROR HANDLING & LOGGING</h1>
