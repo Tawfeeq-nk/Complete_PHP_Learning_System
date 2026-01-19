@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Cheatsheet - Learn & Practice</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				line-height: 1.6;
+				color: #333;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				min-height: 100vh;
+				padding: 20px;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				background: white;
+				border-radius: 10px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+				overflow: hidden;
+			}
+
+			header {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				padding: 40px 20px;
+				text-align: center;
+			}
+
+			header h1 {
+				font-size: 2.5em;
+				margin-bottom: 10px;
+			}
+
+			header p {
+				font-size: 1.1em;
+				opacity: 0.9;
+			}
+
+			nav {
+				background: #f8f9fa;
+				padding: 15px;
+				border-bottom: 2px solid #ddd;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+
+			nav button {
+				padding: 10px 20px;
+				background: #667eea;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 0.95em;
+				transition: all 0.3s ease;
+			}
+
+			nav button:hover {
+				background: #764ba2;
+				transform: translateY(-2px);
+			}
+
+			nav button.active {
+				background: #764ba2;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			}
+
+			.content {
+				display: flex;
+			}
+
+			.sidebar {
+				width: 250px;
+				background: #f8f9fa;
+				border-right: 2px solid #ddd;
+				padding: 20px;
+				max-height: 600px;
+				overflow-y: auto;
+			}
+
+			.sidebar h3 {
+				margin-top: 20px;
+				margin-bottom: 10px;
+				color: #667eea;
+				font-size: 0.95em;
+			}
+
+			.sidebar a {
+				display: block;
+				padding: 8px 12px;
+				color: #333;
+				text-decoration: none;
+				border-radius: 5px;
+				margin-bottom: 5px;
+				transition: all 0.2s ease;
+			}
+
+			.sidebar a:hover {
+				background: #e0e0e0;
+				padding-left: 20px;
+			}
+
+			.main-content {
+				flex: 1;
+				padding: 30px;
+			}
+
+			.section {
+				display: none;
+			}
+
+			.section.active {
+				display: block;
+				animation: fadeIn 0.3s ease;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+
+			.section h2 {
+				color: #667eea;
+				margin-bottom: 20px;
+				border-bottom: 2px solid #667eea;
+				padding-bottom: 10px;
+			}
+
+			.subsection {
+				margin-bottom: 30px;
+			}
+
+			.subsection h3 {
+				color: #764ba2;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			.code-block {
+				background: #f5f5f5;
+				border-left: 4px solid #667eea;
+				padding: 15px;
+				margin: 15px 0;
+				border-radius: 5px;
+				overflow-x: auto;
+				font-family: "Courier New", monospace;
+				font-size: 0.9em;
+			}
+
+			.code-block code {
+				color: #d63384;
+			}
+
+			.example {
+				background: #f0f4ff;
+				border: 1px solid #667eea;
+				border-radius: 5px;
+				padding: 15px;
+				margin: 15px 0;
+			}
+
+			.example-title {
+				font-weight: bold;
+				color: #667eea;
+				margin-bottom: 10px;
+			}
+
+			.experiment {
+				background: #fff3cd;
+				border: 2px dashed #ffc107;
+				border-radius: 5px;
+				padding: 15px;
+				margin: 15px 0;
+			}
+
+			.experiment-title {
+				font-weight: bold;
+				color: #856404;
+				margin-bottom: 10px;
+			}
+
+			textarea {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				font-family: "Courier New", monospace;
+				margin: 10px 0;
+				height: 200px;
+			}
+
+			button.btn-primary {
+				background: #667eea;
+				color: white;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				cursor: pointer;
+				margin: 10px 0;
+				transition: all 0.3s ease;
+			}
+
+			button.btn-primary:hover {
+				background: #764ba2;
+				transform: translateY(-2px);
+			}
+
+			.output {
+				background: white;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				padding: 15px;
+				margin-top: 10px;
+				min-height: 100px;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 15px 0;
+			}
+
+			table th {
+				background: #667eea;
+				color: white;
+				padding: 12px;
+				text-align: left;
+			}
+
+			table td {
+				padding: 12px;
+				border-bottom: 1px solid #ddd;
+			}
+
+			table tr:hover {
+				background: #f5f5f5;
+			}
+
+			.tag-list {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 15px;
+				margin: 15px 0;
+			}
+
+			.tag-item {
+				background: #f5f5f5;
+				padding: 15px;
+				border-radius: 5px;
+				border-left: 4px solid #667eea;
+			}
+
+			.tag-item code {
+				color: #d63384;
+				font-weight: bold;
+			}
+
+			.tag-item p {
+				margin-top: 5px;
+				font-size: 0.9em;
+			}
+
+			ul,
+			ol {
+				margin-left: 20px;
+				margin-bottom: 15px;
+			}
+
+			li {
+				margin-bottom: 8px;
+			}
+
+			.tip {
+				background: #d4edda;
+				border: 1px solid #c3e6cb;
+				color: #155724;
+				padding: 15px;
+				border-radius: 5px;
+				margin: 15px 0;
+			}
+
+			.tip::before {
+				content: "💡 Tip: ";
+				font-weight: bold;
+			}
+
+			@media (max-width: 768px) {
+				.content {
+					flex-direction: column;
+				}
+
+				.sidebar {
+					width: 100%;
+					max-height: none;
+					border-right: none;
+					border-bottom: 2px solid #ddd;
+				}
+
+				nav {
+					flex-direction: column;
+				}
+
+				nav button {
+					width: 100%;
+				}
+
+				header h1 {
+					font-size: 1.8em;
+				}
+			}
+
+			.output iframe {
+				width: 100%;
+				height: 300px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>📚 HTML Cheatsheet</h1>
+				<p>
+					Learn HTML basics, practice with exercises, and experiment with code
+				</p>
+			</header>
+
+			<nav>
+				<button class="active" onclick="showSection('intro')">
+					Introduction
+				</button>
+				<button onclick="showSection('structure')">Structure</button>
+				<button onclick="showSection('text')">Text Tags</button>
+				<button onclick="showSection('links-images')">Links & Images</button>
+				<button onclick="showSection('forms')">Forms</button>
+				<button onclick="showSection('semantic')">Semantic HTML</button>
+				<button onclick="showSection('attributes')">Attributes</button>
+				<button onclick="showSection('practice')">Exercises</button>
+			</nav>
+
+			<div class="content">
+				<div class="main-content">
+					<!-- Introduction Section -->
+					<div id="intro" class="section active">
+						<h2>Introduction to HTML</h2>
+						<div class="subsection">
+							<h3>What is HTML?</h3>
+							<p>
+								HTML (HyperText Markup Language) is the standard markup language
+								used to create web pages. It provides the structure and content
+								of websites.
+							</p>
+						</div>
+
+						<div class="subsection">
+							<h3>Basic HTML Document Structure</h3>
+							<div class="code-block">
+								<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Key Concepts</h3>
+							<ul>
+								<li>
+									<strong>Elements:</strong> HTML elements are the building
+									blocks (tags with opening and closing)
+								</li>
+								<li>
+									<strong>Tags:</strong> Keywords surrounded by angle brackets
+									&lt;&gt;
+								</li>
+								<li>
+									<strong>Attributes:</strong> Provide additional information
+									about elements
+								</li>
+								<li>
+									<strong>Nested Tags:</strong> Tags within tags create
+									hierarchy
+								</li>
+							</ul>
+						</div>
+
+						<div class="tip">
+							Always start with &lt;!DOCTYPE html&gt; and close all opened tags
+							properly.
+						</div>
+					</div>
+
+					<!-- Structure Section -->
+					<div id="structure" class="section">
+						<h2>HTML Document Structure</h2>
+						<div class="subsection">
+							<h3>Head Section</h3>
+							<p>
+								The &lt;head&gt; contains metadata and doesn't display on the
+								page:
+							</p>
+							<div class="code-block">
+								<pre>
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;style&gt;/* CSS here */&lt;/style&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Body Section</h3>
+							<p>The &lt;body&gt; contains all visible page content:</p>
+							<div class="code-block">
+								<pre>
+&lt;body&gt;
+  &lt;h1&gt;Main Heading&lt;/h1&gt;
+  &lt;p&gt;Paragraph of text&lt;/p&gt;
+  &lt;!-- More content --&gt;
+&lt;/body&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Common Structure Elements</h3>
+							<table>
+								<tr>
+									<th>Tag</th>
+									<th>Purpose</th>
+									<th>Example</th>
+								</tr>
+								<tr>
+									<td>&lt;header&gt;</td>
+									<td>Header section</td>
+									<td>&lt;header&gt;Logo and Nav&lt;/header&gt;</td>
+								</tr>
+								<tr>
+									<td>&lt;nav&gt;</td>
+									<td>Navigation links</td>
+									<td>&lt;nav&gt;Menu items&lt;/nav&gt;</td>
+								</tr>
+								<tr>
+									<td>&lt;main&gt;</td>
+									<td>Main content</td>
+									<td>&lt;main&gt;Page content&lt;/main&gt;</td>
+								</tr>
+								<tr>
+									<td>&lt;footer&gt;</td>
+									<td>Footer section</td>
+									<td>&lt;footer&gt;Copyright info&lt;/footer&gt;</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<!-- Text Tags Section -->
+					<div id="text" class="section">
+						<h2>Text & Formatting Tags</h2>
+
+						<div class="subsection">
+							<h3>Headings</h3>
+							<p>Use h1 to h6 for headings (h1 is largest):</p>
+							<div class="code-block">
+								<pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Smaller Heading&lt;/h3&gt;</pre
+								>
+							</div>
+							<div class="example">
+								<div class="example-title">Preview:</div>
+								<h1 style="margin: 0">Main Heading</h1>
+								<h2 style="margin: 0">Subheading</h2>
+								<h3 style="margin: 0">Smaller Heading</h3>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Paragraphs & Text</h3>
+							<div class="code-block">
+								<pre>
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;br&gt; &lt;!-- Line break --&gt;
+&lt;hr&gt; &lt;!-- Horizontal line --&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt; or &lt;b&gt;Bold&lt;/b&gt;
+&lt;em&gt;Italic text&lt;/em&gt; or &lt;i&gt;Italic&lt;/i&gt;
+&lt;u&gt;Underlined text&lt;/u&gt;
+&lt;del&gt;Deleted text&lt;/del&gt;
+&lt;mark&gt;Highlighted text&lt;/mark&gt;</pre
+								>
+							</div>
+							<div class="example">
+								<div class="example-title">Preview:</div>
+								<p style="margin: 0"><strong>Bold text</strong></p>
+								<p style="margin: 0"><em>Italic text</em></p>
+								<p style="margin: 0"><u>Underlined text</u></p>
+								<p style="margin: 0"><del>Deleted text</del></p>
+								<p style="margin: 0"><mark>Highlighted text</mark></p>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Lists</h3>
+							<div class="code-block">
+								<pre>
+&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered List --&gt;
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Code & Preformatted Text</h3>
+							<div class="code-block">
+								<pre>
+&lt;code&gt;Inline code&lt;/code&gt;
+&lt;pre&gt;Preformatted text&lt;/pre&gt;</pre
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Links & Images Section -->
+					<div id="links-images" class="section">
+						<h2>Links & Images</h2>
+
+						<div class="subsection">
+							<h3>Links</h3>
+							<div class="code-block">
+								<pre>
+&lt;!-- External link --&gt;
+&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;
+
+&lt;!-- Link with target --&gt;
+&lt;a href="https://example.com" target="_blank"&gt;Open in new tab&lt;/a&gt;
+
+&lt;!-- Internal link --&gt;
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+
+&lt;!-- Anchor link --&gt;
+&lt;a href="#section1"&gt;Jump to section&lt;/a&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Images</h3>
+							<div class="code-block">
+								<pre>
+&lt;!-- Basic image --&gt;
+&lt;img src="image.jpg" alt="Description"&gt;
+
+&lt;!-- Image with attributes --&gt;
+&lt;img src="photo.jpg" 
+     alt="My photo" 
+     width="200" 
+     height="150"&gt;
+
+&lt;!-- Image as link --&gt;
+&lt;a href="page.html"&gt;
+  &lt;img src="thumb.jpg" alt="Thumbnail"&gt;
+&lt;/a&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="tip">
+							Always include an alt attribute for images. It describes the image
+							if it can't be loaded and helps with accessibility.
+						</div>
+					</div>
+
+					<!-- Forms Section -->
+					<div id="forms" class="section">
+						<h2>HTML Forms</h2>
+
+						<div class="subsection">
+							<h3>Basic Form Structure</h3>
+							<div class="code-block">
+								<pre>
+&lt;form action="/submit" method="POST"&gt;
+  &lt;input type="text" name="username" placeholder="Enter username"&gt;
+  &lt;input type="password" name="password" placeholder="Enter password"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre
+								>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Input Types</h3>
+							<table>
+								<tr>
+									<th>Type</th>
+									<th>Purpose</th>
+									<th>Example</th>
+								</tr>
+								<tr>
+									<td>text</td>
+									<td>Single line text</td>
+									<td>&lt;input type="text"&gt;</td>
+								</tr>
+								<tr>
+									<td>email</td>
+									<td>Email input</td>
+									<td>&lt;input type="email"&gt;</td>
+								</tr>
+								<tr>
+									<td>password</td>
+									<td>Password (hidden)</td>
+									<td>&lt;input type="password"&gt;</td>
+								</tr>
+								<tr>
+									<td>number</td>
+									<td>Numeric input</td>
+									<td>&lt;input type="number"&gt;</td>
+								</tr>
+								<tr>
+									<td>date</td>
+									<td>Date picker</td>
+									<td>&lt;input type="date"&gt;</td>
+								</tr>
+								<tr>
+									<td>checkbox</td>
+									<td>Multiple selection</td>
+									<td>&lt;input type="checkbox"&gt;</td>
+								</tr>
+								<tr>
+									<td>radio</td>
+									<td>Single selection</td>
+									<td>&lt;input type="radio"&gt;</td>
+								</tr>
+								<tr>
+									<td>file</td>
+									<td>File upload</td>
+									<td>&lt;input type="file"&gt;</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="subsection">
+							<h3>Form Elements</h3>
+							<div class="code-block">
+								<pre>
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input id="username" type="text" name="username"&gt;
+
+&lt;textarea name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+
+&lt;select name="options"&gt;
+  &lt;option&gt;Choose one&lt;/option&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</pre
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Semantic HTML Section -->
+					<div id="semantic" class="section">
+						<h2>Semantic HTML</h2>
+
+						<div class="subsection">
+							<h3>What is Semantic HTML?</h3>
+							<p>
+								Semantic HTML uses tags that clearly describe their meaning and
+								purpose to both browsers and developers. This improves
+								accessibility and SEO.
+							</p>
+						</div>
+
+						<div class="subsection">
+							<h3>Semantic Tags</h3>
+							<div class="tag-list">
+								<div class="tag-item">
+									<code>&lt;header&gt;</code>
+									<p>Introductory content or navigation</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;nav&gt;</code>
+									<p>Navigation links</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;main&gt;</code>
+									<p>Main content of the page</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;article&gt;</code>
+									<p>Self-contained content like blog posts</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;section&gt;</code>
+									<p>Thematic grouping of content</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;aside&gt;</code>
+									<p>Sidebar or related content</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;footer&gt;</code>
+									<p>Footer information</p>
+								</div>
+								<div class="tag-item">
+									<code>&lt;figure&gt;</code>
+									<p>Illustration, diagram, photo</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Semantic Example</h3>
+							<div class="code-block">
+								<pre>
+&lt;article&gt;
+  &lt;h1&gt;Article Title&lt;/h1&gt;
+  &lt;p&gt;Article content...&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;figure&gt;
+  &lt;img src="chart.png" alt="Sales chart"&gt;
+  &lt;figcaption&gt;Figure 1: Sales by quarter&lt;/figcaption&gt;
+&lt;/figure&gt;</pre
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Attributes Section -->
+					<div id="attributes" class="section">
+						<h2>HTML Attributes</h2>
+
+						<div class="subsection">
+							<h3>Global Attributes</h3>
+							<p>These attributes can be used on any HTML element:</p>
+							<table>
+								<tr>
+									<th>Attribute</th>
+									<th>Purpose</th>
+									<th>Example</th>
+								</tr>
+								<tr>
+									<td>class</td>
+									<td>CSS class name(s)</td>
+									<td>&lt;p class="intro highlight"&gt;</td>
+								</tr>
+								<tr>
+									<td>id</td>
+									<td>Unique identifier</td>
+									<td>&lt;p id="main-text"&gt;</td>
+								</tr>
+								<tr>
+									<td>style</td>
+									<td>Inline CSS styles</td>
+									<td>&lt;p style="color: red;"&gt;</td>
+								</tr>
+								<tr>
+									<td>title</td>
+									<td>Tooltip text on hover</td>
+									<td>&lt;p title="Hover text"&gt;</td>
+								</tr>
+								<tr>
+									<td>data-*</td>
+									<td>Custom data attributes</td>
+									<td>&lt;p data-age="25"&gt;</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="subsection">
+							<h3>Common Attributes by Tag</h3>
+							<div class="code-block">
+								<pre>
+&lt;!-- For links --&gt;
+&lt;a href="url" target="_blank" title="tooltip"&gt;Link&lt;/a&gt;
+
+&lt;!-- For images --&gt;
+&lt;img src="path.jpg" alt="description" width="100" height="100"&gt;
+
+&lt;!-- For inputs --&gt;
+&lt;input type="text" name="field" required disabled placeholder="hint"&gt;
+
+&lt;!-- For forms --&gt;
+&lt;form action="url" method="POST" enctype="multipart/form-data"&gt;</pre
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Practice Exercises Section -->
+					<div id="practice" class="section">
+						<h2>Practice Exercises</h2>
+
+						<div class="subsection">
+							<h3>Exercise 1: Create a Simple Webpage</h3>
+							<div class="experiment">
+								<div class="experiment-title">📝 Task: Write HTML Code</div>
+								<p>Create a simple webpage with:</p>
+								<ul>
+									<li>A title in the head</li>
+									<li>An h1 heading</li>
+									<li>A paragraph</li>
+									<li>A list with 3 items</li>
+								</ul>
+								<textarea
+									id="exercise1"
+									placeholder="Write your HTML code here..."
+								></textarea>
+								<button
+									class="btn-primary"
+									onclick="previewExercise('exercise1', 'output1')"
+								>
+									Preview
+								</button>
+								<div id="output1" class="output"></div>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Exercise 2: Create a Contact Form</h3>
+							<div class="experiment">
+								<div class="experiment-title">📝 Task: Build a Form</div>
+								<p>Create a contact form with:</p>
+								<ul>
+									<li>Name input field</li>
+									<li>Email input field</li>
+									<li>Message textarea</li>
+									<li>Submit button</li>
+								</ul>
+								<textarea
+									id="exercise2"
+									placeholder="Write your HTML form code here..."
+								></textarea>
+								<button
+									class="btn-primary"
+									onclick="previewExercise('exercise2', 'output2')"
+								>
+									Preview
+								</button>
+								<div id="output2" class="output"></div>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Exercise 3: Create a Blog Post</h3>
+							<div class="experiment">
+								<div class="experiment-title">📝 Task: Use Semantic HTML</div>
+								<p>Create a blog post structure using:</p>
+								<ul>
+									<li>&lt;header&gt; with title</li>
+									<li>&lt;article&gt; with content</li>
+									<li>&lt;footer&gt; with date</li>
+								</ul>
+								<textarea
+									id="exercise3"
+									placeholder="Write semantic HTML code here..."
+								></textarea>
+								<button
+									class="btn-primary"
+									onclick="previewExercise('exercise3', 'output3')"
+								>
+									Preview
+								</button>
+								<div id="output3" class="output"></div>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h3>Free Coding Area</h3>
+							<div class="experiment">
+								<div class="experiment-title">
+									🧪 Experiment: Write & Test HTML
+								</div>
+								<p>Use this area to experiment with any HTML code:</p>
+								<textarea
+									id="freeCode"
+									placeholder="Write your HTML code here and click Preview..."
+								></textarea>
+								<button
+									class="btn-primary"
+									onclick="previewExercise('freeCode', 'freeOutput')"
+								>
+									Preview
+								</button>
+								<div id="freeOutput" class="output"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function showSection(sectionId) {
+				// Hide all sections
+				const sections = document.querySelectorAll(".section");
+				sections.forEach((section) => {
+					section.classList.remove("active");
+				});
+
+				// Show selected section
+				const selectedSection = document.getElementById(sectionId);
+				if (selectedSection) {
+					selectedSection.classList.add("active");
+				}
+
+				// Update active button
+				const buttons = document.querySelectorAll("nav button");
+				buttons.forEach((btn) => {
+					btn.classList.remove("active");
+				});
+				event.target.classList.add("active");
+
+				// Scroll to top
+				window.scrollTo(0, 0);
+			}
+
+			function previewExercise(textareaId, outputId) {
+				const textarea = document.getElementById(textareaId);
+				const output = document.getElementById(outputId);
+				const code = textarea.value.trim();
+
+				if (!code) {
+					output.innerHTML =
+						'<p style="color: red;">Please write some HTML code first!</p>';
+					return;
+				}
+
+				// Create an iframe to safely display user HTML
+				output.innerHTML = "";
+				const iframe = document.createElement("iframe");
+				iframe.style.width = "100%";
+				iframe.style.height = "400px";
+				iframe.style.border = "1px solid #ddd";
+				iframe.style.borderRadius = "5px";
+				output.appendChild(iframe);
+
+				// Write the code to iframe
+				const doc = iframe.contentDocument || iframe.contentWindow.document;
+				doc.open();
+				doc.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        * { box-sizing: border-box; }
+                    </style>
+                </head>
+                <body>
+                    ${code}
+                </body>
+                </html>
+            `);
+				doc.close();
+			}
+
+			// Keyboard shortcut: Ctrl+Shift+P to preview (in practice section)
+			document.addEventListener("keydown", function (e) {
+				if (e.ctrlKey && e.shiftKey && e.code === "KeyP") {
+					e.preventDefault();
+					const activeSection = document.querySelector(".section.active");
+					if (activeSection && activeSection.id === "practice") {
+						alert("Use the Preview buttons to see your code in action!");
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
