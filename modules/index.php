@@ -154,7 +154,6 @@
         <h1>🚀 PHP Backend Learning Path</h1>
         <p class="subtitle">Master PHP fundamentals from zero to advanced level</p>
         <div style="display:flex;justify-content:center;gap:12px;margin-bottom:18px;flex-wrap:wrap">
-            <a href="../index.php" class="btn btn-secondary">Back to Home</a>
         </div>
 
         <div class="modules-grid">
@@ -516,9 +515,6 @@
         <div class="footer">
             <p><strong>Learning Path:</strong> Start with Module 1 and progress sequentially</p>
             <p>Each module includes detailed lessons with examples and practical exercises</p>
-            <p style="margin-top: 20px;"><a href="../index.php" style="color: #667eea;">← Back to Home</a> | <a
-                    href="../START_HERE.php" style="color: #667eea;">Dashboard</a> | <a href="../LEARNING_PATH.php"
-                    style="color: #667eea;">Learning Path</a></p>
         </div>
     </div>
 </body>
