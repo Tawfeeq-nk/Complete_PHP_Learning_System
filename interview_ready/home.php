@@ -91,7 +91,7 @@ if (!empty($_SESSION['user_id'])) {
             </div>
         <?php else: ?>
             <h1>Welcome to Beginner PHP</h1>
-            <p>This is a simple starter site demonstrating registration and login using MySQL and PHP.</p>
+            <p>This is a simple starter site demonstrating simple projects using MySQL and PHP.</p>
             <div class="actions">
                 <a class="btn" href="register.php">Create Account</a>
                 <a class="btn" href="login.php">Log in</a>
