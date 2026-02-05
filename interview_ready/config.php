@@ -92,5 +92,26 @@ if (!$conn->query($create_comments_sql)) {
     die("Error creating blog_comments table: " . $conn->error);
 }
 
+// Add missing columns to users table if they don't exist
+$check_bio = $conn->query("SHOW COLUMNS FROM users LIKE 'bio'");
+if ($check_bio->num_rows === 0) {
+    $conn->query("ALTER TABLE users ADD COLUMN bio TEXT");
+}
+
+$check_profile_image = $conn->query("SHOW COLUMNS FROM users LIKE 'profile_image'");
+if ($check_profile_image->num_rows === 0) {
+    $conn->query("ALTER TABLE users ADD COLUMN profile_image VARCHAR(255)");
+}
+
+$check_last_login = $conn->query("SHOW COLUMNS FROM users LIKE 'last_login'");
+if ($check_last_login->num_rows === 0) {
+    $conn->query("ALTER TABLE users ADD COLUMN last_login TIMESTAMP NULL");
+}
+
+$check_is_active = $conn->query("SHOW COLUMNS FROM users LIKE 'is_active'");
+if ($check_is_active->num_rows === 0) {
+    $conn->query("ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE");
+}
+
 // Set character set to utf8
 $conn->set_charset("utf8");
